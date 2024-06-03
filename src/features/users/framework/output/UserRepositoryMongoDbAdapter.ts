@@ -2,8 +2,8 @@ import { ObjectId, WithId } from 'mongodb';
 import {
   UserRepositoryErrorCode,
   UserRepositoryOutputPort,
-} from 'src/users/application/ports/output/UserRepositoryOutputPort';
-import { User } from 'src/users/domain/entities/User';
+} from '../../../users/application/ports/output/UserRepositoryOutputPort';
+import { User } from '../../../users/domain/entities/User';
 import { Injectable } from '@nestjs/common';
 import { NestMongodbService } from 'nest-mongodb';
 

@@ -4,7 +4,7 @@ import {
   createParamDecorator,
 } from '@nestjs/common';
 import { Request } from 'express';
-import { AccessTokenPayload } from 'src/auth/application/ports/output/JwtOutputPort';
+import { AccessTokenPayload } from '../../../../../auth/application/ports/output/JwtOutputPort';
 import { LOGGED_IN_USER_KEY } from '../constants/logged-in-user-key';
 
 export const LoggedInUser = createParamDecorator(

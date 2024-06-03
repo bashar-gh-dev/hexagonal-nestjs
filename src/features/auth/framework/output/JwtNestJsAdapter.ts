@@ -1,14 +1,14 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { ConfigType } from '@nestjs/config';
 import { JwtService, TokenExpiredError } from '@nestjs/jwt';
-import { jwtConfig } from 'src/config/jwt/jwt.config';
+import { jwtConfig } from '../../../../config/jwt/jwt.config';
 import {
   AccessTokenPayload,
   JwtError,
   JWT_ERROR_KEY_NAME,
   JwtOutputPort,
   RefreshTokenPayload,
-} from 'src/auth/application/ports/output/JwtOutputPort';
+} from '../../../auth/application/ports/output/JwtOutputPort';
 
 @Injectable()
 export class JwtNestJsAdapter implements JwtOutputPort {

@@ -1,4 +1,4 @@
-import { User } from 'src/users/domain/entities/User';
+import { User } from '../../../../users/domain/entities/User';
 
 export const enum UserRepositoryErrorCode {
   DUPLICATED_USER,

@@ -11,11 +11,11 @@ import {
 import { SignInDto } from './dto/sign-in.dto';
 import { SignUpDto } from './dto/sign-up.dto';
 import { Response, Request } from 'express';
-import { AccessTokenGuard } from 'src/auth/framework/input/http/guards/access-token.guard';
-import { Public } from 'src/auth/framework/input/http/decorators/public.decorator';
-import { LoggedInUser } from 'src/auth/framework/input/http/decorators/logged-in-user.decorator';
-import { AuthenticationUseCase } from 'src/auth/application/use-cases/AuthenticationUseCase';
-import { AccessTokenPayload } from 'src/auth/application/ports/output/JwtOutputPort';
+import { AccessTokenGuard } from '../../../../auth/framework/input/http/guards/access-token.guard';
+import { Public } from '../../../../auth/framework/input/http/decorators/public.decorator';
+import { LoggedInUser } from '../../../../auth/framework/input/http/decorators/logged-in-user.decorator';
+import { AuthenticationUseCase } from '../../../../auth/application/use-cases/AuthenticationUseCase';
+import { AccessTokenPayload } from '../../../../auth/application/ports/output/JwtOutputPort';
 
 @UseGuards(AccessTokenGuard)
 @Controller('authentication')

@@ -16,7 +16,7 @@ import { HashingOutputPort } from '../output/HashingOutputPort';
 import {
   UserRepositoryErrorCode,
   UserRepositoryOutputPort,
-} from 'src/users/application/ports/output/UserRepositoryOutputPort';
+} from '../../../../users/application/ports/output/UserRepositoryOutputPort';
 import { RefreshTokenOutputPort } from '../output/RefreshTokenOutputPort';
 import { JwtOutputPort } from '../output/JwtOutputPort';
 

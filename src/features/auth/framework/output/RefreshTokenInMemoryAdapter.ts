@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { RefreshTokenOutputPort } from 'src/auth/application/ports/output/RefreshTokenOutputPort';
+import { RefreshTokenOutputPort } from '../../../auth/application/ports/output/RefreshTokenOutputPort';
 
 // To do: add Redis adapter instead of this shitty one.
 const refreshTokens: { [userId: string]: string } = {};

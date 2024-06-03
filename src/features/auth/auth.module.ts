@@ -10,8 +10,8 @@ import { JwtOutputPort } from './application/ports/output/JwtOutputPort';
 import { HashingBcryptAdapter } from './framework/output/HashingBcryptAdapter';
 import { RefreshTokenInMemoryAdapter } from './framework/output/RefreshTokenInMemoryAdapter';
 import { JwtNestJsAdapter } from './framework/output/JwtNestJsAdapter';
-import { jwtConfig } from '../config/jwt/jwt.config';
-import { UsersModule } from 'src/users/users.module';
+import { jwtConfig } from '../../config/jwt/jwt.config';
+import { UsersModule } from '../users/users.module';
 
 @Module({
   imports: [

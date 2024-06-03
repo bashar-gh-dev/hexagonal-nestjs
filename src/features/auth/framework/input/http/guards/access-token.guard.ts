@@ -11,7 +11,7 @@ import {
   JwtError,
   JWT_ERROR_KEY_NAME,
   JwtOutputPort,
-} from 'src/auth/application/ports/output/JwtOutputPort';
+} from '../../../../../auth/application/ports/output/JwtOutputPort';
 import { Public } from '../decorators/public.decorator';
 import { LOGGED_IN_USER_KEY } from '../constants/logged-in-user-key';
 
